@@ -33,6 +33,7 @@ main {
     border: 1px solid black;
     display: grid;
     grid-template-columns: 300px 1fr;
+    background: white;
 }
 
 .card-img img {
@@ -52,16 +53,28 @@ main {
 }
 .card-icon img{
     width: 50px;
-    border-radius: 50px;
+    border-radius: 75%;
     padding: 6px 0;
 }
+.card-icon-share{
+    background: var(--light-grayish-blue);
+    border-radius: 75%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .card-icon-share img{
+    width: 10px;
+} */
 
 
 .info{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    width: 24%;
+    width: 43%;
 }
 
 .card-item-1 {
@@ -74,4 +87,7 @@ main {
 
 .card-item-3 {
     grid-row: 3 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
