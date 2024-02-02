@@ -15,7 +15,7 @@ body{
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
     background: var(--light-grayish-blue);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 main {
@@ -36,7 +36,42 @@ main {
 }
 
 .card-img img {
-    width: 100%;
+    width: 300px;
     height: 300px;
-    
+}
+
+.card .card-info {
+    display: grid;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+}
+.card-icon img{
+    width: 50px;
+    border-radius: 50px;
+    padding: 6px 0;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 24%;
+}
+
+.card-item-1 {
+    grid-row: 1 / 1;
+}
+
+.card-item-2 {
+    grid-row: 2 / 2;
+}
+
+.card-item-3 {
+    grid-row: 3 / 3;
 }
