@@ -15,22 +15,26 @@ body{
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
     background: var(--light-grayish-blue);
-    /* overflow-y: hidden; */
+    
+}
+.inactive{
+    display: none;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 100vh;
     width: auto;
-    
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .card {
-    width: 900px;
+    width: 800px;
     height: 300px;
-    border: 1px solid black;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 300px 1fr;
     background: white;
@@ -39,12 +43,15 @@ main {
 .card-img img {
     width: 300px;
     height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .card .card-info {
     display: grid;
-    padding: 40px 40px;
-    text-align: center;
+    padding: 33px 36px;
+    text-align: left;
+    width: 86%;
 }
 
 .card-icon {
@@ -64,25 +71,49 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-/* .card-icon-share img{
-    width: 10px;
-} */
-
+.card-icon-share:hover{
+    background: var(--grayish-blue);
+}
 
 .info{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    width: 43%;
 }
-
+.info p{
+    margin: 0;
+    height: 50%;
+}
+.info .info-p1{
+    color: var(--very-dark-grayish-blue);
+    font-weight: var(--text-lg);
+}
+.info .info-p2{
+    color: var(--desaturated-dark-blue);
+    font-weight: var(--text-md);
+}
 .card-item-1 {
     grid-row: 1 / 1;
+    
+}
+.card-item-1 h2 {
+    font-weight: var(--text-lg);
+    text-align: left;
+    font-size: 23px;
+    margin: 0;
+    color: var(--very-dark-grayish-blue);
 }
 
 .card-item-2 {
     grid-row: 2 / 2;
+}
+.card-item-2 p {
+    margin: 0;
+    font-weight: var(--text-md);
+    font-size: 15px;
+    color: var(--desaturated-dark-blue);
 }
 
 .card-item-3 {
@@ -90,4 +121,39 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.card-float{
+    position: relative;
+    right: -260px;
+    bottom: 119px;
+} 
+
+.card-float .punt{
+    position: absolute;
+    bottom: -10px;
+    left: 140px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid var(--very-dark-grayish-blue);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.card-share{
+    height: 55px;
+    width: 266px;
+    display: flex;
+    background: var(--very-dark-grayish-blue);
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    
+}
+.card-share p{
+    color: var(--light-grayish-blue);
+    padding: 10px;
+    letter-spacing: 5px;
+}
+.card-share img {
+    height: 20px;
+    padding: 10px 10px;
 }
