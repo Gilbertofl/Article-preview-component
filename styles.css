@@ -110,7 +110,7 @@ main {
     grid-row: 2 / 2;
 }
 .card-item-2 p {
-    margin: 0;
+    margin-top: 5px;
     font-weight: var(--text-md);
     font-size: 15px;
     color: var(--desaturated-dark-blue);
@@ -124,7 +124,7 @@ main {
 }
 .card-float{
     position: relative;
-    right: -260px;
+    left: 260px;
     bottom: 119px;
 } 
 
