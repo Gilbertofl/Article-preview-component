@@ -19,7 +19,7 @@ body{
 }
 .inactive{
     display: none;
-}
+} 
 
 main {
     display: flex;
@@ -124,8 +124,8 @@ main {
 }
 .card-float{
     position: relative;
-    left: 260px;
-    bottom: 119px;
+    left: 596px;
+    bottom: 155px;
 } 
 
 .card-float .punt{
@@ -156,4 +156,51 @@ main {
 .card-share img {
     height: 20px;
     padding: 10px 10px;
+}
+
+
+@media (min-width: 300px) and ( max-width: 1023px) {
+    main{
+        width: auto;
+    }
+    .card{
+        width: 300px;
+        height: 548px;
+        grid-template-rows: 200px 1fr;
+    }
+    .card-img img{
+        width: 300px;
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .card .card-info{
+        grid-row: 2 / 2;
+        padding: 5px 21px 0;
+        align-items: end;
+        width: 88%;
+    }
+    .card-item-1 h2 {
+        font-size: 16px;
+    }
+    .card-item-3{
+        padding-bottom: 8px;
+    }
+    .card-float {
+        position: relative;
+        left: -300px;
+        top: 477px;
+    }
+    .card-float .punt {
+        display: none;
+    }
+    .card-share{
+        width: 111%;
+        height: 70px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }  
+
 }
